@@ -10,7 +10,7 @@ export default function App() {
 
 
   return (
-    <div className="font-sans text-gray-900 bg-gray-50 min-h-screen mx-auto">
+    <div className="font-sans text-gray-900 bg-gray-50 min-h-screen">
       {/* Header */}
       <header className="bg-indigo-600 text-white p-6 text-center shadow-md">
         <h1 className="text-3xl font-bold">Peng Zhou</h1>
