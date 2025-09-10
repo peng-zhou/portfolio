@@ -5,11 +5,16 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export default function GallerySlider({ title, images }) {
+interface GallerySliderProps {
+  title?: string;
+  images: string[];
+}
+
+export default function GallerySlider({ title, images }: GallerySliderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState('');
 
-  const openModal = (src) => {
+  const openModal = (src: string) => {
     setCurrentImage(src);
     setIsOpen(true);
   };
